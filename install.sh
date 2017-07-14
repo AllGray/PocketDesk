@@ -10,8 +10,8 @@ fi
 reset
 
 # install dependencies
-apt -y upgrade
-apt -y install git xinput-calibrator
+apt-get -y update
+apt-get -y install git xinput-calibrator
 
 # Touchscreen
 mv /etc/X11/xorg.conf /etc/X11/xorg.conf.backup
