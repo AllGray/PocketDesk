@@ -15,11 +15,11 @@ apt -y upgrade
 apt -y install git xinput-calibrator
 
 mv /etc/X11/xorg.conf /etc/X11/xorg.conf.backup
-wget https://raw.githubusercontent.com/AllGray/PocketDesk/master/xorg.conf /etc/X11/xorg.conf
+wget -O /etc/X11/xorg.conf https://raw.githubusercontent.com/AllGray/PocketDesk/master/xorg.conf
 
-wget https://raw.githubusercontent.com/AllGray/PocketDesk/master/.Xmodmap /home/chip
+wget -O /home/chip/.Xmodmap https://raw.githubusercontent.com/AllGray/PocketDesk/master/.Xmodmap
 
-wget https://raw.githubusercontent.com/AllGray/PocketDesk/master/.xinitrc /home/chip
+wget -O /home/chip/.xinitrc https://raw.githubusercontent.com/AllGray/PocketDesk/master/.xinitrc
 
 
 git clone https://github.com/editkid/chip-battery-status.git
