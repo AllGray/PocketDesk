@@ -11,7 +11,7 @@ reset
 
 # install dependencies
 apt-get -y update
-apt-get -y install git xinput-calibrator
+apt-get -y install git xinput-calibrator xfce4-genmon-plugin
 
 # Touchscreen
 mv /etc/X11/xorg.conf /etc/X11/xorg.conf.backup
