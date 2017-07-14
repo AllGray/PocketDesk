@@ -7,7 +7,7 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # Clear the screen
-resethttps://raw.githubusercontent.com/AllGray/PocketDesk/master/.xinitrc /home/chip
+reset
 
 # Start info
 
