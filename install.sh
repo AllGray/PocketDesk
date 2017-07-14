@@ -24,4 +24,4 @@ wget -O /home/chip/.xinitrc https://raw.githubusercontent.com/AllGray/PocketDesk
 # Battery
 git clone https://github.com/editkid/chip-battery-status.git
 cd chip-battery-status
-sudo ./install.sh
+./install.sh
