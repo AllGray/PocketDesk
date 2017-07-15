@@ -1,0 +1,5 @@
+command=chip-battery-xfce-genmon
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=5000
+Font=(default)
