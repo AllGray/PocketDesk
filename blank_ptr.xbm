@@ -1,0 +1,6 @@
+#define blnk_ptr_width 1
+#define blnk_ptr_height 1
+#define blnk_ptr_x_hot 0
+#define blnk_ptr_y_hot 0
+static unsigned char blnk_ptr_bits[] = {
+   0x00 };
