@@ -1,9 +1,20 @@
 # PocketDesk
-Run full desktop on PocketCHIP
+## Run full desktop on PocketCHIP
 
-wget https://raw.githubusercontent.com/AllGray/PocketDesk/master/install.sh
+Flash Desktop 4.4 GUI with Dip Support to your CHIP.
 
-chmod +x install.sh
+SSH/USB-serial into the device and give it interne with `sudo nmtui`
 
-sudo ./install.sh
+In the terminal type: 
 
+`wget https://raw.githubusercontent.com/AllGray/PocketDesk/master/install.sh`
+
+`chmod +x install.sh`
+
+`sudo ./install.sh`
+
+Reboot with `sudo shutdown -r now`
+
+You should now have a fully working desktop GUI on your PocketCHIP. 
+Note! The touchscreen calibration may not be super accurat, but it works. 
+To re-do this yourself type `xinput_calibrator` and run the calibration again.
