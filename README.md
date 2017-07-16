@@ -15,6 +15,8 @@ In the terminal type:
 
 Reboot with `sudo shutdown -r now`
 
-You should now have a fully working desktop GUI on your PocketCHIP. 
-Note! The touchscreen calibration may not be super accurat, but it works. 
+You should now have a fully working desktop GUI on your PocketCHIP.
+ 
+Note! The touchscreen calibration may not be super accurat, but it works.
+ 
 To re-do this yourself type `xinput_calibrator` and run the calibration again.
