@@ -256,3 +256,5 @@ awful.util.spawn_with_shell("onboard $HOME/.config/onboard /usr/share/pocketchi$
 -- launch home screen
 launch_home_screen()
 -- }}}
+
+awful.util.spawn_with_shell("pocket-home")
