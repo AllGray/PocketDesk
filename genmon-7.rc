@@ -1,4 +1,4 @@
-command=chip-battery-xfce-genmon
+Command=chip-battery-xfce-genmon
 UseLabel=0
 Text=(genmon)
 UpdatePeriod=5000
