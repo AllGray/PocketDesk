@@ -11,7 +11,10 @@ reset
 
 # install dependencies
 apt-get -y update
-apt-get -y install git xinput-calibrator xfce4-genmon-plugin awesome apt-transport-https ahoy awesome chip-sunvox pcmanfm pocketchip-batt pocketchip-configs pocketchip-list pocketchip-load pocketchip-localdoc pocketchip-onboard pocketchip-update pocket-home pocket-wm surf vala-terminal
+apt-get -y install software-properties-common 
+add-apt-repository http://opensource.nextthing.co/chip/debian/pocketchip
+apt-get -y update
+apt-get -y install git xinput-calibrator xfce4-genmon-plugin awesome apt-transport-https ahoy chip-sunvox pcmanfm pocketchip-batt pocketchip-configs pocketchip-list pocketchip-load pocketchip-localdoc pocketchip-onboard pocketchip-update pocket-home pocket-wm surf vala-terminal
 
 # PocketHOME
 echo "deb https://o-marshmallow.github.io/PocketCHIP-pocket-home/archive/ jessie main" | sudo tee /etc/apt/sources.list.d/marshmallow-pocket-chip-home.list
