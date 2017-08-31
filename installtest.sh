@@ -46,3 +46,13 @@ git clone https://github.com/editkid/chip-battery-status.git
 cd chip-battery-status
 ./install.sh
 wget -O /home/chip/.config/xfce4/panel/genmon-7.rc https://raw.githubusercontent.com/AllGray/PocketDesk/master/genmon-7.rc
+
+# Sessions
+sudo mv awesome.desktop awesome.desktop.backup
+sudo mv lightdm-xsession.desktop lightdm-xsession.desktop.backup
+sed -i -e 's/Name=Pocket-wm/Name=PocketHome/g'  /usr/share/xsessions/
+sed -i -e 's/Name=Xfce Session/Name=Desktop/g'  /usr/share/xsessions/
+
+# Pocket Logout
+sed -i -e 's/"name": "Get Help",/"name": "Change to Desktop",/g'  ~/.pocket-home/config.json
+sed -i -e 's#surf /usr/share/pocketchip-localdoc/index.html#pkill -KILL -u chip#g'  ~/.pocket-home/config.json
