@@ -48,10 +48,10 @@ cd chip-battery-status
 wget -O /home/chip/.config/xfce4/panel/genmon-7.rc https://raw.githubusercontent.com/AllGray/PocketDesk/master/genmon-7.rc
 
 # Sessions
-sudo mv awesome.desktop awesome.desktop.backup
-sudo mv lightdm-xsession.desktop lightdm-xsession.desktop.backup
-sed -i -e 's/Name=Pocket-wm/Name=PocketHome/g'  /usr/share/xsessions/
-sed -i -e 's/Name=Xfce Session/Name=Desktop/g'  /usr/share/xsessions/
+sudo mv /usr/share/xsessions/awesome.desktop /usr/share/xsessions/awesome.desktop.backup
+sudo mv /usr/share/xsessions/lightdm-xsession.desktop /usr/share/xsessions/lightdm-xsession.desktop.backup
+sed -i -e 's/Name=Pocket-wm/Name=PocketHome/g'  /usr/share/xsessions/pocket-wm.desktop
+sed -i -e 's/Name=Xfce Session/Name=Desktop/g'  /usr/share/xsessions/xfce.desktop
 
 # Pocket Logout
 sed -i -e 's/"name": "Get Help",/"name": "Change to Desktop",/g'  ~/.pocket-home/config.json
