@@ -58,5 +58,5 @@ sed -i -e 's/"name": "Get Help",/"name": "Change to Desktop",/g'  ~/.pocket-home
 sed -i -e 's#surf /usr/share/pocketchip-localdoc/index.html#pkill -KILL -u chip#g'  ~/.pocket-home/config.json
 
 # Wallpaper
-wget https://raw.githubusercontent.com/AllGray/PocketDesk/master/PocketDESK_wall.png
-sed -i -e 's/"background": "4D4D4D",/"background": "/home/chip/PocketDESK_wall.png",/g'  ~/.pocket-home/config.json
+wget https://raw.githubusercontent.com/AllGray/PocketDesk/master/PocketDESK_wall.png /home/chip/.pocket-home/PocketDESK_wall.png
+sed -i -e 's/"background": "4D4D4D",/"background": "/home/chip/.pocket-home/PocketDESK_wall.png",/g'  ~/.pocket-home/config.json
