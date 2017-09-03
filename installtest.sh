@@ -56,3 +56,5 @@ sed -i -e 's/Name=Xfce Session/Name=Desktop/g'  /usr/share/xsessions/xfce.deskto
 # Pocket Logout
 sed -i -e 's/"name": "Get Help",/"name": "Change to Desktop",/g'  ~/.pocket-home/config.json
 sed -i -e 's#surf /usr/share/pocketchip-localdoc/index.html#pkill -KILL -u chip#g'  ~/.pocket-home/config.json
+
+sed -i -e 's/"background": "4D4D4D",/"background": "/home/chip/PocketDESK_wall.png",/g'  ~/.pocket-home/config.json
