@@ -45,7 +45,6 @@ wget -O /home/chip/.xinitrc https://raw.githubusercontent.com/AllGray/PocketDesk
 git clone https://github.com/editkid/chip-battery-status.git
 cd chip-battery-status
 ./install.sh
-wget -O /home/chip/.config/xfce4/panel/genmon-7.rc https://raw.githubusercontent.com/AllGray/PocketDesk/master/genmon-7.rc
 
 # Sessions
 sudo mv /usr/share/xsessions/awesome.desktop /usr/share/xsessions/awesome.desktop.backup
