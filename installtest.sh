@@ -53,8 +53,8 @@ sed -i -e 's/Name=Pocket-wm/Name=PocketHome/g'  /usr/share/xsessions/pocket-wm.d
 sed -i -e 's/Name=Xfce Session/Name=Desktop/g'  /usr/share/xsessions/xfce.desktop
 
 # Pocket Logout
-sed -i -e 's/"name": "Get Help",/"name": "Change to Desktop",/g'  ~/.pocket-home/config.json
-sed -i -e 's#surf /usr/share/pocketchip-localdoc/index.html#pkill -KILL -u chip#g'  ~/.pocket-home/config.json
+sed -i -e 's/"name": "Get Help",/"name": "Change to Desktop",/g'  /home/chip/.pocket-home/config.json
+sed -i -e 's#surf /usr/share/pocketchip-localdoc/index.html#pkill -KILL -u chip#g'  /home/chip/.pocket-home/config.json
 
 # Wallpaper
 wget -O /home/chip/.pocket-home/PocketDESK_wall.png https://raw.githubusercontent.com/AllGray/PocketDesk/master/PocketDESK_wall.png
