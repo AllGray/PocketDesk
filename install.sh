@@ -16,11 +16,11 @@ apt-get -y install git xinput-calibrator xfce4-genmon-plugin xfce4-power-manager
 # Touchscreen
 xinput_calibrator
 mv /etc/X11/xorg.conf /etc/X11/xorg.conf.backup
-wget -O /etc/X11/xorg.conf https://raw.githubusercontent.com/AllGray/PocketDesk/master/xorg.conf
+wget -O /etc/X11/xorg.conf https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/xorg.conf
 
 # Keyboard
-wget -O /home/chip/.Xmodmap https://raw.githubusercontent.com/AllGray/PocketDesk/master/.Xmodmap
-wget -O /home/chip/.xinitrc https://raw.githubusercontent.com/AllGray/PocketDesk/master/.xinitrc
+wget -O /home/chip/.Xmodmap https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/.Xmodmap
+wget -O /home/chip/.xinitrc https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/.xinitrc
 
 # Battery
 git clone https://github.com/editkid/chip-battery-status.git
