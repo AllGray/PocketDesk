@@ -1,1 +1,77 @@
-
+{
+  "defaultPage": "Apps",
+  "pages": [
+    {
+      "name": "Apps",
+      "items": [
+        {
+          "name": "Terminal",
+          "icon": "appIcons/terminal.png",
+          "shell": "vala-terminal -fs 8 -g 20 20"
+        },
+        {
+          "name": "Play PICO-8",
+          "icon": "appIcons/pico8.png",
+          "shell": "pico8"
+        },
+ {
+          "name": "Make Music",
+          "icon": "appIcons/musicsequencer.png",
+          "shell": "sunvox"
+        },
+        {
+          "name": "Change to Desktop",
+          "icon": "appIcons/help.png",
+          "shell": "pkill -KILL -u chip"
+        },
+ {
+          "name": "Write",
+          "icon": "appIcons/texteditor.png",
+          "shell": "leafpad"
+        },
+        {
+          "name": "Browse Files",
+          "icon": "appIcons/filebrowser.png",
+          "shell": "pcmanfm"
+        }
+      ],
+ "cornerButtons": [
+        {
+          "location": "TopLeft",
+          "name": "Battery",
+          "icon": "battery_0.png"
+        },
+        {
+          "location": "TopRight",
+          "name": "WiFi",
+          "icon": "wifiOff.png"
+        },
+{
+          "location": "BottomLeft",
+          "name": "Power",
+          "icon": "powerIcon.png"
+        },
+        {
+          "location": "BottomRight",
+          "name": "Settings",
+          "icon": "settingsIcon.png"
+        } 
+      ]
+      },
+ {
+      "name": "Settings"
+    },
+    {
+      "name": "Power"
+    },
+    {
+      "name": "WiFi"
+    },
+    {
+      "name": "Battery"
+    }
+  ],
+  "background": "/home/chip/.pocket-home/PocketDESK_wall.png",
+  "timeformat": "24h",
+  "cursor": "notvisible"
+}
