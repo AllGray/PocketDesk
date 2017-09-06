@@ -17,6 +17,7 @@ reset
 
 # Run PocketHome
 timeout 10 pocket-home
+sync
 
 # Configure Awesome
 ./PocketDesk/Scripts/awesome.sh
