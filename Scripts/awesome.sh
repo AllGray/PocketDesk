@@ -7,4 +7,4 @@ sudo rm ~/.pocket-home/.passwd/passwd
 
 sed -i -e 's/NoDisplay=true/NoDisplay=false/g'  /usr/share/xsessions/awesome.desktop
 
-Sync
+sync
