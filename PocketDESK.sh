@@ -15,6 +15,9 @@ reset
 # Install PocketHome
 ./PocketDesk/Scripts/pockethome.sh
 
+# Run PocketHome
+timeout 10 pocket-home
+
 # Configure Awesome
 ./PocketDesk/Scripts/awesome.sh
 
