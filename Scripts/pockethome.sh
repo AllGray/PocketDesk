@@ -5,3 +5,4 @@ echo -e "Package: pocket-home\nPin: version *\nPin-Priority: 1050" | sudo tee /e
 apt-get update
 apt-get install pocket-home
 pocket-home
+apt-get update
