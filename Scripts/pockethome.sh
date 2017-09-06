@@ -4,5 +4,4 @@ apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 584F7F9F
 echo -e "Package: pocket-home\nPin: version *\nPin-Priority: 1050" | sudo tee /etc/apt/preferences.d/unpin-pocket-home.pref
 apt-get update
 apt-get install pocket-home
-pocket-home
-apt-get update
+timeout 10 pocket-home
