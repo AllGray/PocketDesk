@@ -20,26 +20,8 @@ Note! The touchscreen calibration may not be super accurat, but it works.
 To re-do this yourself type `xinput_calibrator` and run the calibration again.
 
 
-# PocketDesk Full!
-## Run full desktop AND PocketHome on PocketCHIP
-
-Install:
-
-Make sure you have internet and git installed
-
-`sudo apt -y update && sudo apt -y install git`
-
-`git clone https://github.com/AllGray/PocketDesk.git`
-
-`sudo ./PocketDesk/PocketDesk.sh`
 
 
-
-When the install is done, reboot and behold the glory of a unified system.
-
-To change between the two desktops, just logout with the logout button, 
-
-and choose the other desktop on the top right corner of the login screen
 
 
 # PocketDESK - Unify your PocketCHIP
