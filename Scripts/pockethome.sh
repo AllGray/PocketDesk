@@ -7,4 +7,5 @@ apt-get update
 apt-get install pocket-home
 mkdir /home/chip/.pocket-home/
 wget -O /home/chip/.pocket-home/config.json https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/config.json
+sed -i -e 's#pkill -KILL -u chip#pkill -KILL -u $hostname#g'  /home/chip/.pocket-home/config.json
 sudo chown -R $hostname: .pocket-home/
