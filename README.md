@@ -76,13 +76,13 @@ To do this simply log out of whatever you booted into
 
 **Desktop:** 
 
-https://github.com/AllGray/AllGray_Private/blob/master/gif/Desktop_logout.gif
+![Desktop_logout](https://github.com/AllGray/AllGray_Private/blob/master/gif/Desktop_logout.gif)
 
 
 
 In the login manager you click and choose the desired **GUI** version:
 
-https://github.com/AllGray/AllGray_Private/blob/master/gif/change_wm.gif
+![Change_wm](https://github.com/AllGray/AllGray_Private/blob/master/gif/change_wm.gif)
 
 
 
