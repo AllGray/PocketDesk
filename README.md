@@ -7,9 +7,9 @@ In the terminal type:
 
 `wget https://raw.githubusercontent.com/AllGray/PocketDesk/master/PocketDESKlite.sh`
 
-`chmod +x install.sh`
+`chmod +x PocketDESKlite.sh`
 
-`sudo ./install.sh`
+`sudo ./PocketDESKlite.sh`
 
 Reboot with `sudo shutdown -r now`
 
