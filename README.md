@@ -46,7 +46,7 @@ _Does the touchscreen work?_  **Yes sir**
 _Can i run this next to the normal PocketHome?_ **YES SIR**
 
 
-The install is super simle.
+The install is super simple.
 
 Just run
 
