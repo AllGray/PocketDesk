@@ -37,3 +37,14 @@ reset
 
 # Wallpaper Change
 ./PocketDesk/Scripts/wallpaper.sh
+
+
+# Finishing up (banner spacing works assuming hostname: owncloud)
+echo "+---------------------------------------------------------------------+"
+echo "|                           Congratulation!                           |"
+echo "|                        Your install is done!                        |"
+echo "|                                                                     |"
+echo "|                          Reboot and enjoy                           |"
+echo "|                                                                     |"
+echo "|              PocketDESK was brought to you by AllGray!              |"
+echo "+---------------------------------------------------------------------+"
