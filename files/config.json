@@ -71,7 +71,7 @@
       "name": "Battery"
     }
   ],
-  "background": "/home/chip/.pocket-home/PocketDESK_wall.png",
+  "background": "/home/chip/.pocket-home/PocketDESK_wall_gray_480x272.png",
   "timeformat": "24h",
   "cursor": "notvisible"
 }
