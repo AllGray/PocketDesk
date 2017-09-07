@@ -28,8 +28,6 @@ To re-do this yourself type `xinput_calibrator` and run the calibration again.
 
 ## All your CHIPs in one place; it's a party!
 
-It's this time of the year. The time where i create something awesome, and this time i outdid myself
-
 
 ----------
 
