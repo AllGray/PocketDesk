@@ -15,10 +15,6 @@ reset
 # Install PocketHome
 ./PocketDesk/Scripts/pockethome.sh
 
-# Configure Awesome
-# Testing without this part!
-# ./PocketDesk/Scripts/awesome.sh
-
 # Working Touchscreen
 ./PocketDesk/Scripts/touchscreen.sh
 
@@ -30,10 +26,6 @@ reset
 
 # Nicely named sessions
 ./PocketDesk/Scripts/sessions.sh
-
-# Logout button for PocketHome
-# Not needed anymore! 
-#./PocketDesk/Scripts/logout.sh
 
 # Wallpaper Change
 ./PocketDesk/Scripts/wallpaper.sh
