@@ -6,29 +6,55 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
+MYDIR=`dirname $0`
+source "$MYDIR/Scripts/spinner.sh"
+
 # Clear the screen
 reset
 
+echo "+---------------------------------------------------------------------+"
+echo "|                      Installing stuff for you                       |"
+echo "|                   Go make yorself a cup of coffee                   |"
+echo "|                                                                     |"
+echo "|              PocketDESK was brought to you by AllGray!              |"
+echo "+---------------------------------------------------------------------+"
+
+
+
 # install dependencies
-./PocketDesk/Scripts/dependencies.sh
+start_spinner [Installing_dependencies]
+$MYDIR/Scripts/dependencies.sh &> /dev/null
+stop_spinner $?
 
 # Install PocketHome
-./PocketDesk/Scripts/pockethome.sh
+start_spinner [Installing_PocketHome]
+$MYDIR/Scripts/pockethome.sh &> /dev/null
+stop_spinner $?
 
 # Working Touchscreen
-./PocketDesk/Scripts/touchscreen.sh
+start_spinner [Fixing_touchscreen]
+$MYDIR/Scripts/touchscreen.sh &> /dev/null
+stop_spinner $?
 
 # Working Keyboard
-./PocketDesk/Scripts/keyboard.sh
+start_spinner [Fixing_keyboard]
+$MYDIR/Scripts/keyboard.sh &> /dev/null
+stop_spinner $?
 
 # Get a battery indicator
-./PocketDesk/Scripts/battery.sh
+start_spinner [Installing_battery_indicator]
+$MYDIR/Scripts/battery.sh &> /dev/null
+stop_spinner $?
 
 # Nicely named sessions
-./PocketDesk/Scripts/sessions.sh
+start_spinner [Correcting_names]
+$MYDIR/Scripts/sessions.sh &> /dev/null
+stop_spinner $?
 
 # Wallpaper Change
-./PocketDesk/Scripts/wallpaper.sh
+start_spinner [Selling_out]
+$MYDIR/Scripts/wallpaper.sh &> /dev/null
+stop_spinner $?
 
 
 # Finishing up
