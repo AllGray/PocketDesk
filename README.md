@@ -1,5 +1,6 @@
 # PocketDESK - Unify your PocketCHIP
 
+![PocketDESKlogo](https://github.com/AllGray/PocketDesk/blob/master/images/PocketDESKlogo.PNG?
 ## A DESKTOP WHEN YOU WANT IT, POCKETHOME WHEN YOU DON’T
 
 ![PocketDESK](https://blog.nextthing.co/wp-content/uploads/2017/09/pdesktop6B-1024x683.jpg)
