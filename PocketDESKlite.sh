@@ -6,29 +6,45 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
+MYDIR=`dirname $0`
+source "$MYDIR/Scripts/spinner.sh"
+
 # Clear the screen
 reset
 
+echo "+---------------------------------------------------------------------+"
+echo "|                      Installing stuff for you                       |"
+echo "|                   Go make yorself a cup of coffee                   |"
+echo "|                                                                     |"
+echo "|            PocketDESKlite was brought to you by AllGray!            |"
+echo "+---------------------------------------------------------------------+"
+
 # install dependencies
-apt-get -y update
-apt-get -y install git xinput-calibrator xfce4-genmon-plugin xfce4-power-manager-plugins
+start_spinner [Installing_dependencies]
+$MYDIR/Scriptslite/dependencieslite.sh &> /dev/null
+stop_spinner $?
 
-# Touchscreen
-xinput_calibrator
-mv /etc/X11/xorg.conf /etc/X11/xorg.conf.backup
-wget -O /etc/X11/xorg.conf https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/xorg.conf
+# Working Touchscreen
+start_spinner [Fixing_touchscreen]
+$MYDIR/Scriptslite/touchscreenlite.sh &> /dev/null
+stop_spinner $?
 
-# Keyboard
-wget -O /home/chip/.Xmodmap https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/.Xmodmap
-wget -O /home/chip/.xinitrc https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/.xinitrc
+# Working Keyboard
+start_spinner [Fixing_keyboard]
+$MYDIR/Scriptslite/keyboardlite.sh &> /dev/null
+stop_spinner $?
 
-# Battery
-git clone https://github.com/editkid/chip-battery-status.git
-cd chip-battery-status
-./install.sh
-# wget -O /home/chip/.config/xfce4/panel/genmon-7.rc https://raw.githubusercontent.com/AllGray/PocketDesk/master/genmon-7.rc
+# Get a battery indicator
+start_spinner [Installing_battery_indicator]
+$MYDIR/Scriptslite/batterylite.sh &> /dev/null
+stop_spinner $?
 
-# Clean up
-cd
-rm -r install.sh
-rm -r chip-battery-status
+# Finishing up
+echo "+---------------------------------------------------------------------+"
+echo "|                           Congratulation!                           |"
+echo "|                        Your install is done!                        |"
+echo "|                                                                     |"
+echo "|                          Reboot and enjoy                           |"
+echo "|                                                                     |"
+echo "|            PocketDESKlite was brought to you by AllGray!            |"
+echo "+---------------------------------------------------------------------+"
