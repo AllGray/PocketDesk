@@ -5,11 +5,11 @@ Flash Desktop 4.4 GUI with Dip Support to your CHIP.
 
 In the terminal type: 
 
-`wget https://raw.githubusercontent.com/AllGray/PocketDesk/master/PocketDESKlite.sh`
+`sudo apt update && sudo apt install git`
 
-`chmod +x PocketDESKlite.sh`
+`git clone https://github.com/AllGray/PocketDesk.git`
 
-`sudo ./PocketDESKlite.sh`
+`sudo ./PocketDesk/PocketDESKlite.sh`
 
 Reboot with `sudo shutdown -r now`
 
