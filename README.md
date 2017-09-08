@@ -30,7 +30,7 @@ Just run
 
     git clone https://github.com/AllGray/PocketDesk.git
 
-    sudo ./PocketDesk/PocketDesk.sh
+    sudo ./PocketDesk/PocketDESK.sh
 
 That is it. Do a reboot and you are good to go.
 
