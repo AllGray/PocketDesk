@@ -31,3 +31,8 @@ All notable changes to this project will be documented in this file.
 
 - Added a HOSTNAME change
 - Stopped being a fool.., Shebang my tool
+
+## 0.0.0.8 (Xtacocorex birthday update)
+
+- bugfix
+- README.md error fixed
