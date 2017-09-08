@@ -27,4 +27,7 @@ All notable changes to this project will be documented in this file.
 - Created a "Noise free" installation methode
 - Fixed a permission issue in ~.pocket-home/
 
+## 0.0.0.7 (Shebanging update)
 
+- Added a HOSTNAME change
+- Stopped being a fool.., Shebang my tool
