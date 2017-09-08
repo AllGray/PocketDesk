@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Sessions
 sudo mv /usr/share/xsessions/awesome.desktop /usr/share/xsessions/awesome.desktop.backup
 sudo mv /usr/share/xsessions/lightdm-xsession.desktop /usr/share/xsessions/lightdm-xsession.desktop.backup

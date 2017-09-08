@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # install dependencies
 apt-get -y update
 apt-get -y install software-properties-common 

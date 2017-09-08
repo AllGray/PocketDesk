@@ -51,6 +51,11 @@ start_spinner [Correcting_names]
 $MYDIR/Scripts/sessions.sh &> /dev/null
 stop_spinner $?
 
+# Setting Hostname
+start_spinner [Changing_Hostname]
+$MYDIR/Scripts/hostname.sh &> /dev/null
+stop_spinner $?
+
 # Wallpaper Change
 start_spinner [Selling_out]
 $MYDIR/Scripts/wallpaper.sh &> /dev/null

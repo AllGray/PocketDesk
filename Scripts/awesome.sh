@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Configure Awesome
 awesome
 touch  ~/.config/awesome/rc.lua  

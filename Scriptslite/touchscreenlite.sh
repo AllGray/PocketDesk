@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Touchscreen
 xinput_calibrator
 mv /etc/X11/xorg.conf /etc/X11/xorg.conf.backup
