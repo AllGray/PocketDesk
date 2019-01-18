@@ -12,7 +12,7 @@ reset
 # install dependencies
 apt-get -y update
 apt-get -y install software-properties-common 
-add-apt-repository http://opensource.nextthing.co/chip/debian/pocketchip
+add-apt-repository http://chip.jfpossibilities.com/chip/debian/pocketchip
 apt-get -y update
 apt-get -y install git xinput-calibrator xfce4-genmon-plugin awesome apt-transport-https ahoy chip-sunvox pcmanfm pocketchip-batt pocketchip-configs pocketchip-list pocketchip-load pocketchip-localdoc pocketchip-onboard pocketchip-update pocket-home pocket-wm surf vala-terminal
 
@@ -24,7 +24,7 @@ apt-get update
 apt-get install pocket-home
 
 touch  ~/.config/awesome/rc.lua  
-wget -O ~/.config/awesome/rc.lua https://raw.githubusercontent.com/AllGray/PocketDesk/master/rc.lua
+wget -O ~/.config/awesome/rc.lua https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/rc.lua
 cp /usr/share/pocket-home/config.json ~/.pocket-home/config.json
 sudo rm ~/.pocket-home/.passwd/passwd
 
@@ -35,11 +35,11 @@ Sync
 # Touchscreen
 xinput_calibrator
 mv /etc/X11/xorg.conf /etc/X11/xorg.conf.backup
-wget -O /etc/X11/xorg.conf https://raw.githubusercontent.com/AllGray/PocketDesk/master/xorg.conf
+wget -O /etc/X11/xorg.conf https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/xorg.conf
 
 # Keyboard
-wget -O /home/chip/.Xmodmap https://raw.githubusercontent.com/AllGray/PocketDesk/master/.Xmodmap
-wget -O /home/chip/.xinitrc https://raw.githubusercontent.com/AllGray/PocketDesk/master/.xinitrc
+wget -O /home/chip/.Xmodmap https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/.Xmodmap
+wget -O /home/chip/.xinitrc https://raw.githubusercontent.com/AllGray/PocketDesk/master/files/.xinitrc
 
 # Battery
 git clone https://github.com/editkid/chip-battery-status.git
@@ -57,5 +57,5 @@ sed -i -e 's/"name": "Get Help",/"name": "Change to Desktop",/g'  /home/chip/.po
 sed -i -e 's#surf /usr/share/pocketchip-localdoc/index.html#pkill -KILL -u chip#g'  /home/chip/.pocket-home/config.json
 
 # Wallpaper
-wget -O /home/chip/.pocket-home/PocketDESK_wall.png https://raw.githubusercontent.com/AllGray/PocketDesk/master/PocketDESK_wall.png
+wget -O /home/chip/.pocket-home/PocketDESK_wall.png https://raw.githubusercontent.com/AllGray/PocketDesk/master/images/PocketDESK_wall.png
 sed -i -e 's#"background": "4D4D4D",#"background": "/home/chip/.pocket-home/PocketDESK_wall.png",#g'  ~/.pocket-home/config.json
