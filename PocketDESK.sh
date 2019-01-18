@@ -12,12 +12,13 @@ source "$MYDIR/Scripts/spinner.sh"
 # Clear the screen
 reset
 
-echo "+---------------------------------------------------------------------+"
-echo "|                      Installing stuff for you                       |"
-echo "|                   Go make yorself a cup of coffee                   |"
-echo "|                                                                     |"
-echo "|              PocketDESK was brought to you by AllGray!              |"
-echo "+---------------------------------------------------------------------+"
+echo "+---------------------------------------------------------------+"
+echo "|                   Installing stuff for you                    |"
+echo "|                Go make yorself a cup of coffee                |"
+echo "|                                                               |"
+echo "|           PocketDESK was brought to you by AllGray!           |"
+echo "|        (and subsequently forked/mangled by ceemonkey)         |"
+echo "+---------------------------------------------------------------+"
 
 
 
@@ -63,11 +64,12 @@ stop_spinner $?
 
 
 # Finishing up
-echo "+---------------------------------------------------------------------+"
-echo "|                           Congratulation!                           |"
-echo "|                        Your install is done!                        |"
-echo "|                                                                     |"
-echo "|                          Reboot and enjoy                           |"
-echo "|                                                                     |"
-echo "|              PocketDESK was brought to you by AllGray!              |"
-echo "+---------------------------------------------------------------------+"
+echo "+---------------------------------------------------------------+"
+echo "|                        Congratulations!                       |"
+echo "|                     Your install is done!                     |"
+echo "|                                                               |"
+echo "|                       Reboot and enjoy                        |"
+echo "|                                                               |"
+echo "|           PocketDESK was brought to you by AllGray!           |"
+echo "|        (and subsequently forked/mangled by ceemonkey)         |"
+echo "+---------------------------------------------------------------+"
